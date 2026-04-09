@@ -1,3 +1,11 @@
+I have added the "many unnamed individual clients" to your Representative Clients list. It fits perfectly and highlights that while the firm handles large corporate matters, you still value and protect the privacy of your individual clients.
+
+Here is the fully updated code. 
+
+### 📂 Instructions:
+Save the code below as **`index.html`** and overwrite your previous file.
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +14,7 @@
     
     <title>Best lawyers in Ranchi | Sumit Prakash & Associates | High Court & Criminal Defense</title>
     
-    <meta name="description" content="Sumit Prakash & Associates: Best lawyers in Ranchi serving since 1999. Experts in High Court Writs, Criminal Defense, SARFAESI, DRT, and Service Matters.">
+    <meta name="description" content="Sumit Prakash & Associates: Best lawyers in Ranchi. Experts in High Court Writs, Criminal Defense, SARFAESI, DRT, and Service Matters.">
     <meta name="keywords" content="Best lawyers in Ranchi, High Court Advocate in Ranchi, Criminal Lawyer Ranchi, SARFAESI Lawyer Ranchi, DRT Advocate Ranchi, Service Matter Lawyer Ranchi, Sumit Prakash & Associates">
     
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
@@ -130,6 +138,12 @@
         
         .bg-light { background: var(--light-bg); }
 
+        /* --- EMPANELMENT & CLIENTS --- */
+        .clients-wrapper { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 50px; text-align: left; }
+        .clients-wrapper h2 { font-size: 1.8rem; margin-bottom: 25px; border-bottom: 2px solid var(--accent); padding-bottom: 10px; display: inline-block; }
+        .client-list-custom li { padding-left: 20px; position: relative; margin-bottom: 12px; font-size: 0.95rem; color: #444; font-weight: 600; }
+        .client-list-custom li::before { content: "■"; color: var(--primary); position: absolute; left: 0; font-size: 0.8rem; top: 2px; }
+
         /* --- CONTACT --- */
         .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; }
         .contact-box { background: var(--light-bg); padding: 30px; border-radius: 8px; }
@@ -192,9 +206,9 @@
     <section class="hero" id="home">
         <div class="container">
             <p style="text-transform: uppercase; letter-spacing: 2px; font-size: 14px; color: var(--accent); margin-bottom: 10px;">
-                <strong>Serving Since 1999</strong>
+                <strong>Ranchi • Patna</strong>
             </p>
-            <h1>Advocates & Legal Consultants</h1>
+            <h1>Strategic Legal Counsel & Advocacy</h1>
             <p>Providing comprehensive legal representation at the High Court of Jharkhand, Tribunals, and District Courts with professional integrity and dedication.</p>
             <a href="#contact" class="btn btn-gold">Chamber Details</a>
         </div>
@@ -206,7 +220,7 @@
                 <h2>Our Team</h2>
                 <div style="width: 60px; height: 3px; background: var(--accent); margin: 15px auto;"></div>
                 <p style="max-width: 700px; margin: 0 auto 30px; color: #666;">
-                    With a rich legacy of <strong>serving since 1999</strong>, our firm combines deep experience with modern legal strategy.
+                    Our firm combines deep legal experience with modern strategy to deliver precise, effective representation for our clients.
                 </p>
             </div>
 
@@ -218,7 +232,7 @@
                         <h3 class="team-name">Sumit Prakash</h3>
                         <span class="team-role">Managing Partner</span>
                         <p class="team-bio">
-                            With over 25 years of practice (Serving since 1999), he brings extensive experience in Civil, Criminal, and Service Litigation. Formerly Associate Counsel of the State at the High Court.
+                            With professional post-qualification experience spanning back to 1999, he brings extensive expertise in Civil, Criminal, and Service Litigation. Formerly Associate Counsel of the State at the High Court.
                         </p>
                         <div class="academics">
                             <strong>Focus:</strong> High Court Writs, Service Matters, State Litigation.
@@ -338,14 +352,55 @@
         </div>
     </section>
 
-    <section class="section-padding services-bg" id="contact">
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="clients-wrapper">
+                
+                <div>
+                    <h2>Empanelled Advocate At</h2>
+                    <ul class="client-list-custom" style="list-style:none;">
+                        <li>State Bank of India</li>
+                        <li>Punjab National Bank</li>
+                        <li>Bank of Baroda</li>
+                        <li>Bank of India</li>
+                        <li>Union Bank of India</li>
+                        <li>Indian Overseas Bank</li>
+                        <li>Employee's Provident Fund Organisation</li>
+                        <li>Bharat Sanchar Nigam Limited</li>
+                        <li>SREI Group</li>
+                        <li>L&T Financial Services</li>
+                        <li>Bihar State Housing Co-operative Federation Ltd.</li>
+                        <li>Bihar State Financial Corporation</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2>Representative Clients</h2>
+                    <ul class="client-list-custom" style="list-style:none;">
+                        <li>Samsung India Electronics Pvt. Ltd.</li>
+                        <li>Adani Power Jharkhand Limited</li>
+                        <li>Vijeta Projects & Infrastructure Limited</li>
+                        <li>Frontline Business Solutions Pvt. Ltd.</li>
+                        <li>Gati Limited</li>
+                        <li>Tata Motors Limited</li>
+                        <li>Many unnamed individual clients</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding" id="contact">
         <div class="container">
             <div class="contact-grid">
+                
                 <div>
-                    <h2>Chamber Details</h2>
-                    <p style="margin-bottom: 30px;">Located in Kadru, Ranchi. Serving clients across Jharkhand.</p>
+                    <h2>Chamber & Office Details</h2>
+                    <p style="margin-bottom: 30px;">Serving clients across Jharkhand and Bihar.</p>
                     
                     <div class="contact-box">
+                        <h3 style="font-size: 1.2rem; margin-bottom: 15px; border-bottom: 1px solid #ddd; padding-bottom: 10px; color: var(--primary);">Head Office - Ranchi</h3>
                         <div class="contact-row">
                             <span class="icon">📍</span>
                             <div>
@@ -356,7 +411,7 @@
                         </div>
                         
                         <div class="contact-row">
-                            <a href="https://share.google/V6FazEkz1Ehh1r2P4" target="_blank" class="btn btn-gold" style="width:100%; text-align:center; color:#0f2c4e; border:none;">🗺️ Get Directions on Google Maps</a>
+                            <a href="https://share.google/V6FazEkz1Ehh1r2P4" target="_blank" class="btn btn-gold" style="width:100%; text-align:center; color:#0f2c4e; border:none; font-size: 0.9rem;">🗺️ Directions on Google Maps</a>
                         </div>
                         
                         <div class="contact-row" style="border-top: 1px solid #ddd; padding-top: 15px;">
@@ -385,9 +440,26 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="contact-box" style="margin-top: 30px;">
+                        <h3 style="font-size: 1.2rem; margin-bottom: 15px; border-bottom: 1px solid #ddd; padding-bottom: 10px; color: var(--primary);">Associate Office - Patna</h3>
+                        <div class="contact-row">
+                            <span class="icon">📍</span>
+                            <div>
+                                <strong>Address:</strong><br>
+                                Patna, Bihar
+                            </div>
+                        </div>
+                        <div class="contact-row">
+                            <span class="icon">👤</span>
+                            <div>
+                                <strong>Adv. Prabha Shankar Mishra</strong>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 
-                <div style="background: var(--white); padding: 40px; border-radius: 8px; border: 1px solid #eee;">
+                <div style="background: var(--light-bg); padding: 40px; border-radius: 8px;">
                     <h3>Contact Us</h3>
                     <p style="font-size: 14px; margin-bottom: 20px;">For appointments or case inquiries.</p>
                     <form action="mailto:sumit.solicitor@gmail.com?subject=New%20Website%20Inquiry" method="POST" enctype="text/plain">
@@ -405,7 +477,7 @@
         <div class="container">
             <div class="logo" style="font-size: 20px; color: #fff; margin-bottom: 10px;">Sumit Prakash <span>& Associates</span></div>
             <p>&copy; 2025 Sumit Prakash & Associates. All Rights Reserved.</p>
-            <p class="footer-loc">Serving clients in Ranchi, Doranda, Hinoo, Lalpur, Bariatu, Kanke, and surrounding areas.</p>
+            <p class="footer-loc">Serving clients in Ranchi, Patna, Doranda, Hinoo, Lalpur, Bariatu, Kanke, and surrounding areas.</p>
         </div>
     </footer>
 
@@ -417,3 +489,4 @@
 
 </body>
 </html>
+```
